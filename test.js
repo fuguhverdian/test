@@ -22,11 +22,11 @@ function result(sentences) {
     const currentWordCount = words.length;
 
     if (currentWordCount > maxWordCount) {
-      maxWordCount = currentWordCount;
+      maxWordCount = currentWordCount+1;
       maxSentence = currentSentence;
     }
 
-    return maxSentence;
+    return maxWordCount;
 }
 }
 console.log(result(sentences));
